@@ -1,0 +1,58 @@
+{
+    "compilerOptions": {
+      // Enable latest features
+      "lib": ["ESNext", "DOM"],
+      // バージョン指定
+      "target": "ESNext",
+      // モジュール指定
+      "module": "ESNext",
+      // モジュール検出 
+      "moduleDetection": "force",
+      // JSX 指定
+      "jsx": "react-jsx",
+      // JS ファイルのインポートを許可
+      "allowJs": true,
+      // Bundler mode
+      "moduleResolution": "bundler",
+      // TS ファイルのインポートを許可
+      "allowImportingTsExtensions": true,
+      // モジュール構文の厳密なチェックを無効化
+      "verbatimModuleSyntax": false,
+      // コンパイルしない
+      "noEmit": true,
+      // Best practices
+      "strict": true,
+      // ライブラリの型チェックを無効化
+      "skipLibCheck": true,
+      // switch 文の fallthrough を禁止
+      "noFallthroughCasesInSwitch": true,
+      // 未使用のローカル変数を禁止
+      "noUnusedLocals": false,
+      // 未使用のパラメータを禁止
+      "noUnusedParameters": false,
+      // インデックスシグネチャからプロパティアクセスを禁止
+      "noPropertyAccessFromIndexSignature": false,
+      // ECMAScript module interoperability
+      "esModuleInterop": true,
+      // デコレータのサポートを追加
+      "experimentalDecorators": true,
+      // デコレータのメタデータを有効化
+      "emitDecoratorMetadata": true,
+      // Jest の型定義を追加
+      "types": ["jest", "node"],
+      // 出力ディレクトリ
+      "outDir": "dist",
+      // ルートディレクトリ
+      "rootDir": "src",
+      // ベースディレクトリ
+      "baseUrl": "src",
+      // パスのエイリアス
+      "paths": {
+        "@/*": ["./*"]
+      }
+    },
+    // コンパイル対象のファイル
+    "include": ["src/**/*"],
+    // 除外対象のディレクトリ
+    "exclude": ["node_modules", "dist"]
+}
